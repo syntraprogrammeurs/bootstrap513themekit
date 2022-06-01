@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "allcss": "sass css/bootstrap.scss css/bootstrap.css && postcss --use autoprefixer -r css/bootstrap.css css/bootstrap.css && css-minify -f css/bootstrap.css -o css && rollup js/main.js --file ./js/bundle.js --format cjs",
+    "allcss": "sass css/bootstrap.scss css/bootstrap.css && postcss --use autoprefixer -r css/bootstrap.css css/bootstrap.css && css-minify -f css/bootstrap.css -o css",
     "rolmin": "rollup js/main.js --file ./js/bundle.js --format cjs && terser ./js/bundle.js -c -m -o ./js/bundle.min.js",
     "dev": "npm-run-all allcss rolmin",
     "css-purge-min": "purgecss --keyframes --css css/bootstrap.min.css --content ./*.html \"node_modules/bootstrap/js/dist/{util,modal}.js\" --output css/"

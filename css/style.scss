@@ -1,6 +1,7 @@
 $primary:#00FF00;
 $secondary:#23fff5;
 $danger:#000;
+
 $btn-border-radius: 50%;
 $color:orange;
 .m-6{
@@ -8,13 +9,10 @@ $color:orange;
 }
 
 
-
 #testBtn{
     font-size:16px;
-&:hover{
+    &:hover{
      font-size:32px;
      cursor: pointer;
-
- }
+    }
 }
-@use 'navbar';
